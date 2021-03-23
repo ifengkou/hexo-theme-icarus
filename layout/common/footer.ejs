@@ -6,12 +6,13 @@
                 <% if (logo && logo.text) { %>
                     <%= logo.text %>
                 <% } else { %>
-                    <img src="<%- url_for(logo) %>" alt="<%= title %>" height="28">
+                    <img src="<%- url_for(logo) %>" alt="<%= title %>" style="width: 28px;height: 28px;">
                 <% } %>
                 </a>
                 <p class="is-size-7">
                 &copy; <%= date(new Date(), 'YYYY') %> <%= author || title %>&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                &nbsp;&nbsp;<a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">湘ICP备19017949号-1</a>
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a 
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 <% if (busuanzi) { %>
                 <br>
